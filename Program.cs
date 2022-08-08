@@ -1,5 +1,14 @@
-﻿int number = Convert.ToInt32(Console.ReadLine());
+﻿Console.Write("Введите первое число: ");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
 
-int square = number * number;
+Console.Write("Введите второе число: ");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Результат возведения в квадрат: " + square);
+if(firstNumber == secondNumber * secondNumber)
+{
+    Console.WriteLine(firstNumber + " является квадратом от " + secondNumber);
+}
+else
+{
+    Console.WriteLine(firstNumber + " НЕ является квадратом от " + secondNumber);
+}
